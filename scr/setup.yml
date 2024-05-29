@@ -35,7 +35,7 @@
 
     - name: Копировать файл index.html
       copy:
-        src: ../template/index.html
+        src: ./index.html
         dest: /home/ansible-worker/www/stud-template/index.html
         owner: ansible-worker
         group: ansible-worker
@@ -48,7 +48,7 @@
 
     - name: Копировать конфигурационный файл в sites-available
       copy:
-        src: ../../nginx/ansible.iphilka.ru.conf
+        src: ../nginx/ansible.iphilka.ru.conf
         dest: /etc/nginx/sites-available/ansible.iphilka.ru.conf
         owner: root
         group: root
